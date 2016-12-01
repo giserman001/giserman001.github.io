@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* == clearfix == */
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clear{clear:both;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.vh {border: 0;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}
+/*-------------------公共--------------------------*/
+body{font-size:12px; line-height:1.5; font-family: "Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif; color:#888; background:#f0f0f0}
+a{text-decoration: none; color:#888;}
+a:hover,a.hover{color:#666;}
+.fl,.tab .h li{float: left; display: inline;}
+.fr{float:right; display: inline;}
+strong,h1,h2,h2,h3,h3{font-weight: bold;}
+fieldset{_display:inline;}
+.h{position: relative;}
+.hr{position:absolute; right: 12px; top: 14px;}
+.tab .b{display: none;}
+.tab .active{display: block;}
+h2{font-size: 14px; color:#333;}
+button{border:none; cursor: pointer; width:57px; height:27px; line-height:27px; color:#fff;}
+em,i{font-style:normal}
+li{ list-style:none}
+/*-------------------文章模块--------------------------*/
+.article h3{text-align:center;}
+.article p {text-indent:;}
+/*-------------------新闻列表模块--------------------------*/
+.list li{position:relative;}
+.list li b{color:#FF0000; font-weight:normal;}
+.list li span{position:absolute; right:0; top:0;}
+.list2 li{float:left; display:inline; width:50%;}
+/*-------------------图片列表模块--------------------------*/
+.img dl{float:left;display:inline;}
+.img dt{text-align:center;}
+/*-------------------选项卡模块--------------------------*/
+.tab .h li{float:left; display:inline;}
+.tab .b{display:none;}
+.tab .active{display:inline-block;}
+/*-------------------数字幻灯模块--------------------------*/
+.slider{ position:relative; overflow:hidden}
+.slider .b{ padding:0;}
+.slider .f{position:absolute; right:17px; bottom:17px; z-index:999}
+.slider .f a{background:#B5B5B5; margin-left:4px; float:left; display:inline; width:11px; height:11px; overflow:hidden; border-radius:6px; text-indent:-999em;}
+.slider .f .activeSlide{background:#FCFF00;}
+/*-------------------布局--------------------------*/
+#mianContent{margin: 0 auto; width:1210px; overflow:hidden}
+.w1210{width:1210px; margin:0 auto}
+.w1002{width:1002px; margin:0 auto}
+
+#newLeft ul{width:74px; height:100%; background:#d10048; position:fixed; top:0; left:0; padding-top:10px; text-align:center;z-index:9999}
+#newLeft ul li.MenuItemLi{height:46px; line-height:46px; overflow:hidden; background:url(../images/menuLine.png) center bottom no-repeat;}
+#newLeft ul li.MenuItemLi2{line-height: normal; padding-top:5px}
+#newLeft ul li a{display:block;width:74px; height:44px;color:#fff; overflow:hidden;}
+#newLeft ul li a:hover,#newLeft ul li a.active{background:#db366f}
+#newLeft ul li a em{display:block;}
+	#SubMenuContent,.ProductMenu {background-color: #ababab; background: rgba(171,171,171,1);height: 100%;width: 74px;position: fixed;z-index: 20000;left: 74px;top:0;text-align: center;display:none ;}
+	.SubMenu {margin-top: auto;margin-bottom: auto;height: 500px;margin-top: 56px;}
+	.SubMenuItem, #SubMenuContent a, .ProductMenu  a{height: 46px;line-height: 46px;color: #fff;text-decoration: none;}
+	.SubMenuItem:hover {height: 46px;line-height: 46px;color: #fff;}
+	.SubMenuLine { height: 1px;background-color: #edece4;opacity: 0.2;line-height: 0;}
+	.CurrentMenu {background-color: #a2ce6b;}
+#newRight{position: fixed;top: 10%;right: 0px;voice-family: "\"}\"";voice-family: inherit; text-align:center;width: auto;height: auto; z-index:9999}
+#right-phone,#rightweixin{position:relative; text-align:center; width:75px}
+.right-kefu,.right-weixin{position:absolute; left:-300px; opacity:0; display:none}
+.right-kefu{top:0px}
+.right-weixin{top:0px}
+/*-------------------头部--------------------------*/
+.com-header h1{height:70px; line-height:70px; *margin-top:20px; *height:50px}
+.com-header h2{height:70px; line-height:80px; margin-left:8px; *margin-top:35px; *height:auto}
+.com-header .c2{margin-top:30px; position:relative;}
+.com-header .c2 a{display:inline-block; vertical-align:middle; margin-left:3px; }
+.search-btn,.headerCar,.carbtn,.add_car,.box-inner .closed,.box-inner .box-content,.input-icon,.theThird dd a,.invalid .required,.refer,.hot-wrap .c1 a span{background:url(../images/index-bg.png) no-repeat}
+.search-btn{width:20px; height:23px; background-position:0 0; }
+.headerCar{background-position:0 -45px; width:23px; height:22px; display:inline-block; margin-right:8px; position:relative}
+.headerCar i{position:absolute; top:-4px; left:15px; width:18px;*width:16px; height:18px; text-align:center; background:#d10048; padding:0 1px; font-style:normal !important; color:#fff; border-radius:20px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:20px;}
+#vivo-head .vivo-search{height:80px; width:100%; background:rgba(0,0,0,.3);  position:relative; z-index: 9999; display:none;}
+.vivo-search .search-box{width:700px; height:40px; position:absolute; top:20px; left:50%; margin-left:-350px; background:#666; position: relative; z-index: 9999;}
+.vivo-search .search-box input{width:590px; *width:588px; height:40px; *line-height:40px; padding:10px 20px; *padding:0; font-size:14px; color:#555; border:0 none; background:#fff; overflow:hidden; vertical-align:middle;}
+.vivo-search .search-box button{width:110px; height:40px; overflow:hidden; text-align:center; font-size:14px; color:#fff; border:none; overflow:hidden; vertical-align:middle; background:#000; outline:none; cursor:pointer; -webkit-transition:background .2s ease-in-out; -moz-transition:background .2s ease-in-out; -ms-transition:background .2s ease-in-out; transition:background .2s ease-in-out;}
+.vivo-search .search-box button:hover{background:#d10048;}
+.vivo-search .search-box button:active{-webkit-box-shadow:0 1px 2px rgba(0,0,0,.3) inset; -moz-box-shadow:0 1px 2px rgba(0,0,0,.3) inset; -ms-box-shadow:0 1px 2px rgba(0,0,0,.3) inset; box-shadow:0 1px 2px rgba(0,0,0,.3) inset;}
+.vivo-search .search-box a.close{ cursor:pointer;width:24px; height:24px; position:absolute; top:8px; right:-40px; background:url(../images/vivo-head-ico.png) -86px 0 no-repeat; _background-image:url(../images/vivo-head-ico.gif);}
+.vivo-search .search-box a.close:hover{background-position:-86px -25px;}
+.vivo-search .search-box .qk-results{width: 588px; position: absolute; left: 0; top: 40px; border: 1px #eee solid; border-top:none; display: none;}
+.vivo-search .search-box .qk-results ul li{display: block; position: relative; background: #fff; border-top: 1px #eee solid;}
+.vivo-search .search-box .qk-results ul li a{display: block; padding: 10px; position: relative; color: #666; -webkit-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; -ms-transition:all .3s ease-in-out; transition:all .3s ease-in-out;}
+.vivo-search .search-box .qk-results ul li a b{width: 60px; height: 60px; float: left; overflow: hidden; margin-right: 10px;}
+.vivo-search .search-box .qk-results ul li a h2{font-weight: bold; padding-bottom: 2px; margin-top: 12px;}
+.vivo-search .search-box .qk-results ul li a span{display: inline-block; position: absolute; right: 15px; top: 30px; font-size: 14px;}
+.vivo-search .search-box .qk-results ul li a:hover{color: #fff; background: #00aaff;}
+.vivo-search .search-box .qk-results .other-results{padding: 10px; background: #fff; border-top: 1px #eee solid;}
+.vivo-search .search-box .qk-results .other-results a{font-size: 14px; color:#00aaff; }
+
+/*-------------------浮动--------------------------*/
+#floating{left: 50%;margin-left: 520px;position: fixed;top:150px; height: 434px; z-index:1002}
+.floating{width:124px; text-align:center; overflow:hidden}
+.floating .h a{display:block; height:222px; overflow:hidden}
+.floating .b{height:182px; overflow:hidden}
+.floating .f{}
+
+/*-------------------底部banner--------------------------*/
+#footer{margin-top:60px}
+.r8{margin:10px 0; border-bottom:1px solid #dce0e3; padding-bottom:30px;}
+.r8 .c1{width:42.9%;}
+.r8 .c2{width:57.1%;}
+.m15 li a.md{background: url(../images/footer-bg.png) no-repeat; display:block; width:76px; height:75px; margin:0 auto 10px}
+.m15 li{float: left; display: inline;  margin:10px 30px 0 0; *margin-right: 32px; text-align: center; *width:105px;}
+.m15 li a.r8-xl{background-position:0 0;}
+.m15 li a.r8-zy{background-position:0 -106px;}
+.m15 li a.r8-rq{background-position:0 -212px;}
+.m15 li a.r8-tx{background-position:0 -317px;}
+.m15 li.last{margin-right:0}
+.m15 li a{font-size: 16px;}
+.m15 li img{display: block; margin:0 auto}
+.r8 dl{float:left; width:115px; text-shadow: #fff 0 1px 0; font-size:14px; line-height:30px;}
+.r8 dl.last{width:px}
+.r8 dl.last dt,.r10-inner dl.last dd{text-align:center}
+.r8 dl dt{font-size:18px; font-weight:normal}
+
+#f{padding-bottom:20px; width:100%;}
+#f .r9{padding:25px 0 0}
+#f .r9 ul{width:555px; margin:0 auto;}
+#f .r9 li{float: left; display: inline-block; border-right:1px solid #909090; border-left:1px solid #e0e0e0; height:20px; line-height: 20px;}
+#f .r9 li a{font-size: 14px;text-shadow: #fff 0 1px 0; margin:0 15px;}
+#f .r9 li.first{border-left: none;}
+#f .r9 li.last{border-right: none;}
+#f .r9 p{width:578px; margin: 0 auto;font-size: 14px;text-shadow: #fff 0 1px 0;}
+
+.slideBox .tempWrap{margin-top:20px;}

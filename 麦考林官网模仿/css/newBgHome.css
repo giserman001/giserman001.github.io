@@ -1,0 +1,35 @@
+@charset "utf-8";
+#newBgHome{
+	position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1002;
+}
+#newBgHome .newBgHomeBanner{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -564px;
+    margin-top: -295px;
+    width: 1129px;
+    height: 589px;
+}
+#newBgHome .newBgHomeBanner span{
+	position: absolute;
+    right: -18px;
+    top: -18px;
+    cursor: pointer;
+}
+#newBgHome .newBgHomeBanner a{
+	text-decoration: none;
+	color: #888;
+}
+#newBgHome .newBgHomeBanner a img{
+	width: 1129px;
+	height: 589px;
+}

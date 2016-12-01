@@ -1,0 +1,54 @@
+@charset "utf-8";
+#newLeft{
+	width: 74px;
+    height: 100%;
+    background: #d10048;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 9999;
+}
+#newLeft ul li.MenuItemLi{
+	height: 46px;
+    line-height: 46px;
+    overflow: hidden;
+    background: url(../img/menuLine.png) center bottom no-repeat;
+}
+#newLeft ul li.MenuItemLi a{
+	color: #fff;
+	display: block;
+    width: 74px;
+    height: 44px;
+    overflow: hidden;
+}
+#newLeft ul li.MenuItemLi a:hover{
+	background: #db366f;
+}
+#newLeft ul li.MenuItemLi .ProductMenu{
+	background-color: #ababab;
+    background: rgba(171,171,171,1);
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 20000;
+    left: 74px;
+    top: 0;
+    text-align: center;
+    opacity: 0;
+    display: none;
+}
+#newLeft ul li.MenuItemLi .ProductMenu .SubMenu{
+	-margin-top: auto;
+    margin-bottom: auto;
+    height: 500px;
+    margin-top: 56px;
+}
+  #newLeft ul li.MenuItemLi .ProductMenu .SubMenu .SubMenuLine{
+  	height: 1px;
+    background-color: #edece4;
+    opacity: 0.2;
+    line-height: 0;
+  }  
+    
