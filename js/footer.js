@@ -1,0 +1,32 @@
+$(function(){
+	var footer=$('#footer');
+	footer.find('.r8-xl').mouseenter(function(){
+		$(this).stop(true).animate({
+			marginTop:-10
+		},300,function(){
+			$(this).stop(true).animate({
+				marginTop:0
+			},300);
+		});
+	})
+	footer.find('.r8-zy').mouseenter(function(){
+		$(this).stop(true).animate({
+			marginTop:-10
+		},300,function(){
+			$(this).stop(true).animate({
+				marginTop:0
+			},300);
+		});
+	})
+	footer.find('.r8-rq').mouseenter(function(){
+		$(this).stop(true).animate({
+			marginTop:-10
+		},300,function(){
+			$(this).stop(true).animate({
+				marginTop:0
+			},300);
+		});
+	})
+	/*footer.find('.r8-zy').fadeIn().fadeOut();
+	footer.find('.r8-rq').fadeIn().fadeOut();*/
+});
