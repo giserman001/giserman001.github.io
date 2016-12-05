@@ -94,6 +94,21 @@ $(function(){
 	};
 	search.init();
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
  轮播区域功能
  * */
@@ -256,6 +271,123 @@ $(function(){
 			}
 	};
 	banner.init();
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 
+	 * main区域的特效
+	 * */
+	var main={
+		mainFunction:$('.main'),
+		init:function(){
+			this.enterLeave();
+			this.clickMouse();
+			this.closedAnimate();
+			this.companyMOve();
+		},
+		//鼠标移入移出(main-top)
+		enterLeave:function(){
+			//console.log( this.mainFunction.find('.main-top .beauty .description'));
+			this.mainFunction.find('.main-top .show').hover(function(){
+				$(this).find('.description').css({
+					backgroundColor:"#EEAFCE"
+				});
+				$(this).find('.arrow_hover').css({
+					borderLeftColor:"#EEAFCE"
+				});
+				$(this).find('.description').find('p').eq(0).css({
+					color:"#fff"
+				});
+				$(this).find('.arrow_right').css({
+					borderRightColor:"#EEAFCE"
+				});
+				$(this).find('.image .move-left').stop(true).animate({
+					left:-5
+				},200);
+				$(this).find('.image .move-right').stop(true).animate({
+					left:5
+				},200);
+			},function(){
+				$(this).find('.description').css({
+					backgroundColor:"#fff"
+				});
+				$(this).find('.arrow_hover').css({
+					borderLeftColor:"#fff"
+				});
+				$(this).find('.description').find('p').eq(0).css({
+					color:"#888"
+				});
+				$(this).find('.arrow_right').css({
+					borderRightColor:"#fff"
+				});
+				$(this).find('.image .move-left').stop(true).animate({
+					left:0
+				},200);
+				$(this).find('.image .move-right').stop(true).animate({
+					left:0
+				},200);
+			});
+		},
+		//鼠标点击
+		clickMouse:function(){
+			this.mainFunction.find('.click').on('click',function(){
+				$('#bgGround').show();
+				$(this).next().css({
+					//opacity:1,
+					zIndex:1003
+				});
+				$(this).next().stop(true).animate({
+					width:380,
+					opacity:1,
+					//zIndex:1003
+				},600,function(){
+					$(this).stop(true).animate({
+						height:689,
+					},1000);
+				});
+			});
+		},
+		//点击叉号关闭动画
+		closedAnimate:function(){
+			var that=this;
+			this.mainFunction.find('.click').next().find('.close').on('click',function(){
+				$('#bgGround').hide();
+				that.mainFunction.find('.click').next().animate({
+					height:227
+				},1000,function(){
+					$(this).animate({
+						opacity:0,
+						width:0
+					},600,function(){
+								that.mainFunction.find('.click').next().css({
+							//opacity:1,
+							zIndex:-1
+						});
+					});
+				});
+			});
+		},
+		//company区域的功能
+		companyMOve:function(){
+			this.mainFunction.next().find('.move').hover(function(){
+				//console.log(1);
+				$(this).find('.move-l').stop(true).animate({
+					left:-5
+				},200);
+			},function(){
+				//console.log($(this));
+				$(this).find('.move-l').stop(true).animate({
+					left:0
+				},200);
+			});
+		}
+	};
+	main.init();
 });
 
 

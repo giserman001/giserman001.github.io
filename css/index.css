@@ -408,6 +408,12 @@
 	width: 380px;
 	height: 227px;
 }
+/*#containers .margin .main .main-top .description:hover{
+	color: #fff;
+}
+#containers .margin .main .main-top .beauty .description:hover{
+	background: #EEAFCE;
+}*/
 #containers .margin .main .main-top .col1 .row2 .description{
 	float: left;
 	width: 150px;
@@ -433,6 +439,8 @@
 #containers .margin .main .main-top .col1 .row2 .image img{
 	width: 190px;
 	height: 227px;
+	position: relative;
+	z-index: 8
 }
 #containers .margin .main .main-top .col1 .row2 .image .arrow_left{
 	position: absolute;
@@ -472,6 +480,8 @@
 #containers .margin .main .main-top .col1 .row3 .image img{
 	width: 190px;
 	height: 227px;
+	position: relative;
+	z-index: 8
 }
 #containers .margin .main .main-top .col1 .row3 .image .arrow_right{
 	position: absolute;
@@ -521,6 +531,8 @@
 	height: 227px;
 	display: block;
 	border: 0;
+	position: relative;
+	z-index: 8
 }
 #containers .margin .main .main-top .col2 .row1 .image .arrow_left{
 	position: absolute;
@@ -654,6 +666,8 @@
 #containers .margin .main .main-top .col3 .row1 .image img{
 	width: 190px;
 	height: 227px;
+	position: relative;
+	z-index: 8
 }
 #containers .margin .main .main-top .col3 .row1 .image .arrow_left{
 	position: absolute;
@@ -772,6 +786,8 @@
 #containers .margin .main .main-top .col3 .row2 .image img{
 	width: 190px;
 	height: 227px;
+	position: relative;
+	z-index: 8
 }
 #containers .margin .main .main-top .col3 .row2 .image .arrow_right{
 	position: absolute;
@@ -823,6 +839,8 @@
 #containers .margin .main .main-top .col3 .row3 .image img{
 	width: 190px;
 	height: 227px;
+	position: relative;
+	z-index: 8
 }
 #containers .margin .main .main-top .col3 .row3 .image .arrow_left{
 	position: absolute;
@@ -920,6 +938,9 @@
 	width: 1152px;
 	height: 462px;
 }
+/* #containers .margin .company a:hover{
+	color: #666;
+} */
 #containers .margin .company .qy-row{
 	margin: 0 0 4px 0;
     cursor: pointer;
@@ -939,8 +960,9 @@
     background: #fff;
     float: left;
     position: relative;
+    z-index: 10
 }
-#containers .margin .company .qy-row .col .info .h2{
+#containers .margin .company .qy-row .col .info .h2 {
 	font-size: 14px;
 	line-height: 22px;
     margin-bottom: 20px;
@@ -948,8 +970,17 @@
     overflow: hidden;
     color: #333;
 }
+#containers .margin .company .qy-row .col .info .h2 a{
+	line-height: 22px
+}
+#containers .margin .company .qy-row .col .info .h2 a:hover{
+	color: #666;
+}
 #containers .margin .company .qy-row .col .info p a{
 	color: #888;
+}
+#containers .margin .company .qy-row .col .info p a:hover:nth-child(1){
+	color: #666;
 }
 #containers .margin .company .qy-row .col .info p .redtxt{
 	color: #d10048;
@@ -981,19 +1012,10 @@
     vertical-align: middle;
     width: 322px;
     height: 226px;
+    position: relative;
+    z-index: 8
 }
     
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1141,6 +1163,23 @@
 #footer .lastme{
 	text-align: center;
     padding-bottom: 10px;
+}
+
+
+
+
+/* 背景遮罩层 */
+#bgGround{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+    bottom: 0;
+    z-index: 1002;
+	background: rgba(0,0,0,.5);
+	display: none;
 }
 
     
