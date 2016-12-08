@@ -111,8 +111,8 @@ $(function(){
 			/*
 				判断是否存在用户名（用户是否曾经点击过【自动登录】）
 			*/
-			console.log(JSON.parse($.cookie('username'))['username']);
-			if( $.cookie('username') ){
+			//console.log(JSON.parse($.cookie('username'))['username']);
+			if( $.cookie('username')!=''&&$.cookie('username')!=undefined ){
 				this.username.val(JSON.parse($.cookie('username'))['username']);
 				this.password.val(JSON.parse($.cookie('username'))['password']);
 				this.remember.prop('checked',true);
