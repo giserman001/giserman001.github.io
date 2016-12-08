@@ -58,7 +58,7 @@ $(function(){
 				this.remove();
 				this.goodsSelect();
 				this.selectAll();
-				//this.delSelected();
+				this.delSelected();
 			},
 			//点击数量增加
 			increase:function(){
