@@ -1,0 +1,51 @@
+@charset "utf-8";
+#mianContent2 .remember{
+	margin-bottom: 20px;
+    font-size: 14px;
+}
+#mianContent2 .remember label{
+	cursor: pointer;
+}
+#mianContent2 .remember label input{
+	vertical-align: -2px;
+    margin-right: 10px;
+}
+#mianContent2 .remember .fr{
+	float: right;
+    display: inline
+}
+.theThird{
+	height: 40px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+.theThird dt{
+	font-weight: normal;
+    font-size: 14px;
+    margin-right: 10px;
+    float: left;
+    display: inline;
+}
+.theThird .fl{
+	float: left;
+    display: inline;
+}
+.theThird .fl .sina{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    overflow: hidden;
+    background: url(../img/index-bg.png) no-repeat;
+    background-position: -45px -113px;
+    
+}
+.theThird .fl .qq{
+	background: url(../img/index-bg.png) no-repeat;
+	background-position: -55px -170px;
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    overflow: hidden;
+}

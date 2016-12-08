@@ -1,0 +1,209 @@
+@charset "utf-8";
+#mianContent2{
+	background: url(../img/login-reg.gif) center top no-repeat;
+}
+#mianContent2 .w1002{
+	position: relative;
+    height: 722px;
+    width: 1002px;
+    margin: 0 auto;
+}
+#mianContent2 .w1002 h1 a img{
+	border: 0;
+    vertical-align: middle;
+}
+#mianContent2 .w1002 .login-wrap{
+	position: absolute;
+    top: 100px;
+    right: 5%;
+    width: 340px;
+    height: 434px;
+}
+#mianContent2 .w1002 .login-wrap .inner{
+	position: relative;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-bg{
+	position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid #fff;
+    width: 340px;
+    height: 506px;
+    opacity: 0.6;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg{
+	position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 1;
+    width: 280px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg p{
+	color: #333;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg p a{
+	color: #fea417;
+    text-decoration: underline;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg p a.fr{
+	float: right;
+    display: inline;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form{
+	position: relative;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text{
+	display: block;
+    margin-bottom: 30px;
+    border: 1px solid #c5c8c6;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 5px;
+    position: relative;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .input-icon1{
+	background: url(../img/index-bg.png) no-repeat;
+	display: inline-block;
+    margin-top: 8px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background-position: -62px 0;
+    vertical-align: middle;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text input{
+	border: none;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    width: 88%;
+    vertical-align: middle;
+    background: none;
+    font-size: 15px;
+    outline: none;
+}
+
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .invalid {	
+	display: none;
+	min-width: 100px;
+	height: 25px;
+	position: absolute;
+    left: 0;
+    bottom: -25px;
+    background: url(../img/index-bg.png) no-repeat;
+    background-position: -62px -220px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .invalid .required{
+	color: #f00;
+    -background-position: -62px -222px;
+    padding-left: 30px;
+} 
+
+
+
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .invalid .required2{
+	background-position: -62px -220px;
+    line-height: 24px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .ver-code{
+	width: 45%;
+    vertical-align: top;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .new-img{
+	margin-right: 5px;
+    float: right;
+    line-height: 40px;
+    height: 40px;
+    width: 114px;
+    text-align: center;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .new-img .code-img{
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+	width: 60px;
+	height: 30px;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	margin-top: 4px;
+	background: #EEEEEE;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .new-img b{
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 7px;
+	-moz-user-select:-moz-none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .input-icon {
+	background: url(../img/index-bg.png) no-repeat;
+	display: inline-block;
+    margin-top: 8px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    -background-position: -62px 0;
+    vertical-align: middle;
+    background-position: -60px -44px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .ver-code{
+	width: 52%;
+    vertical-align: top;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .code-btn{
+	display: inline-block;
+    padding: 0 10px;
+    line-height: 28px;
+    border-radius: 20px;
+    border: 1px solid #a8abaa;
+    color: #5b5b5b;
+    position: absolute;
+    top: 5px;
+    right: 2px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .input-icon2{
+	background-position: -60px -44px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .text .input-icon{
+	display: inline-block;
+    margin-top: 8px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    -background-position: -62px 0;
+    vertical-align: middle;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .remember{
+	margin-bottom: 20px;
+    font-size: 14px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .remember label{
+	cursor: pointer;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .remember label input{
+	vertical-align: -2px;
+    margin-right: 10px;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .remember label .xieyi-content{
+	color: #f75296;
+    text-decoration: underline;
+}
+#mianContent2 .w1002 .login-wrap .inner .login-fg form .login_btn{
+	display: block;
+    border-radius: 5px;
+    background: #d10048;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 20px;
+}

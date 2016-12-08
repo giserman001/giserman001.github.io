@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/newBgHome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/newLeft.css"/>
+		<link rel="stylesheet" type="text/css" href="css/newRight.css"/>
+		<link rel="stylesheet" type="text/css" href="css/chart.css" />
+	</head>
+	<body>
+		<div id="vivo-head">
+            <div class="vivo-search">
+                <div class="search-box">
+                    <form id="searchForm" name="searchForm" method="get" action="/search.php">
+                    <input type="text" name="keywords" id="searchInput" value="" placeholder="热门搜索：洁面  控油  祛痘">
+                    <a class="search">搜索</a>
+                    <a class="close " ></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div id="newLeft">
+			<ul>
+				<li class="MenuItemLi">
+					<a href="#">首页</a>
+				</li>
+				<li class="MenuItemLi">
+					<a href="javascript:;" class="change">品牌系列</a>
+					<div class="ProductMenu">
+                        <div class="SubMenu">
+                            <div class="SubMenuLine"> </div>
+                            <a href="#" target="_blank"><div class="SubMenuItem">维您</div></a>
+                            <div class="SubMenuLine"> </div>
+                            <a href="#" target="_blank">
+                                <div class="SubMenuItem">LA CELLER</div>
+                            </a>
+                            <div class="SubMenuLine"> </div>
+                            <a href="#" target="_blank">
+                                <div class="SubMenuItem">秘密花园</div>
+                            </a>
+                            <div class="SubMenuLine"> </div>
+                            <a href="#" target="_blank">
+                                <div class="SubMenuItem">SONOKO</div>
+                            </a>
+                            <div class="SubMenuLine"> </div>
+                        </div>
+                    </div>
+				</li>
+				<li class="MenuItemLi">
+					<a href="#">美容护肤</a>
+				</li>
+				<li class="MenuItemLi">
+					<a href="#">健康养生</a>
+				</li>
+				<li class="MenuItemLi">
+					<a href="#">家居日用</a>
+				</li>
+				<li class="MenuItemLi">
+					<a href="#">积分换购</a>
+				</li>
+				<li class="MenuItemLi">
+					<a href="#">VIP<br>会员专区</a>
+				</li>
+				<li class="MenuItemLi">
+					<a href="#">关于麦考林</a>
+				</li>
+			</ul>
+		</div>
+		<div id="containers" class="clear">
+			<div class="margin clear">
+				<div class="header clear">
+					<div class="logo l">
+						<a href="javascript:;"><img src="img/newlogo.png"/></a>
+					</div>
+					<div class="header-l r">
+						<a href="javascript:;" class="search-btn"></a>
+						<span class="user_info_ajax">
+							|
+							<a href="#">退出</a>
+							|
+							<a href="#">我的账户</a>
+							|
+							<a href="#" class="headerCar">
+								<em></em>
+								<i>0</i>
+							</a>
+							<span>
+								<img src="img/tel-call.png" />
+							</span>
+						</span>
+					</div>
+				</div>
+				<div class="gocart">
+					<h3 class="com-head">购物车</h3>
+					<table class="cart_group_item  cart_group_item_product"> 
+                        <thead> 
+                            <tr> 
+                            	<th class="selector">
+                                	<input type="checkbox" class="js_group_selector cart_group_selector all_selector"> 
+                                </th>
+                                <th class="cart_overview"> 
+                                    <div class="cart_group_header"> 
+                                    	<h2>商品名称</h2> 
+                                    </div> 
+                                </th> 
+                                <th class="cart_price">价格</th> 
+                                <th class="cart_num">数量</th> 
+                                <th class="cart_total">小计（元）</th> 
+                                <th class="cart_option">操作</th> 
+                            </tr> 
+                        </thead> 
+                        <tbody> 
+                             
+                       </tbody> 
+  					</table>
+					<div class="common_handler clear"> 
+                        <div class="right_handler"> 
+	                        <div class="postage-wrap">
+	                            <p class="postage"> 共 <span class="total_amount"> 1 </span> 
+	                            &nbsp;件商品 &nbsp;&nbsp; 商品应付总额 (不包含运费) ：</p>
+	                            <p class="postage">(满99元包邮，不含EMS及港澳台)</p>
+	                        </div>
+	                        	<span class="total_price" id="total_price">￥<i>360</i></span> 
+	                        <a id="go_to_order" class="btn" href="javascript:goCheckout();">立即结算</a> 
+                        </div>
+
+                        <label for="js_all_selector" class="cart_all_selector_wrapper"><input type="checkbox" id="js_all_selector" class="js_all_selector all_selector"> 全选 </label> 
+                        <a class="go_back_shopping" href="/">继续购物</a> 
+                        <span class="seperate_line">|</span> 
+                        <a class="clear_cart_all" id="delGoods" href="javascript:void(0)">清空选中商品</a> 
+                    </div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div id="footer" class="clear">
+			<div class="r r8 clear">
+			    <div class="w1210">
+			        <div class="c c1 fl">
+			            <div class="m m15">
+			                <ul class="clear">
+			                    <li>
+			                        <a href="#" target="_blank" class="md r8-xl"></a>
+			                        <a href="#" target="_blank">100%正品保证</a>
+			                    </li>
+			                    <li>
+			                        <a href="#" target="_blank" class="md r8-zy"></a>
+			                        <a href="#" target="_blank">专业在线客服</a>
+			                    </li><li class="last">
+			                        <a href="#" target="_blank" class="md r8-rq"></a>
+			                        <a href="#" target="_blank">满99元包邮</a>
+			                    </li>
+			                </ul>
+			            </div>
+			        </div>
+			        <div class="c c2 fr">
+			            <dl>
+			                <dt>新手指南</dt>
+			                <dd><a href="#" target="_blank" title="新会员注册">新会员注册</a></dd>
+			                <dd><a href="#" target="_blank" title="购物演示">购物演示</a></dd>
+			                <dd><a href="#" target="_blank" title="常见问题">常见问题</a></dd>
+			            </dl>
+			            <dl>
+			                <dt>付款方式</dt>
+			                <dd><a href="#" target="_blank" title="银行卡支付">银行卡支付</a></dd>
+			                <dd><a href="#" target="_blank" title="支付宝支付">支付宝支付</a></dd>
+			                <dd><a href="#" target="_blank" title="余额支付">余额支付</a></dd>
+			            </dl>
+			            <dl>
+			                <dt>售后服务</dt>
+			                <dd><a href="#" target="_blank" title="退换货政策">退换货政策</a></dd>
+			                <dd><a href="#" target="_blank" title="退换货流程">退换货流程</a></dd>
+			                <dd><a href="#" target="_blank" title="退款流程">退款流程</a></dd>
+			                <dd><a href="#" target="_blank" title="发票说明">发票说明</a></dd>
+			            </dl>
+			            <dl>
+			                <dt>特色服务</dt>
+			                <dd><a href="#" target="_blank" title="贵宾专区">贵宾专区</a></dd>
+			                <dd><a href="javascript:void(0)" id="BizQQWPA4" title="在线客服">在线客服</a></dd>
+			            </dl>
+			             <dl>
+			                <dt>麦考林生活家</dt>
+			                <dd><img src="img/dingyue.jpg" alt="麦考林生活家" width="100" height="100"></dd>
+			            </dl>
+			             <dl class="last">
+			                <dt>麦考林服务号</dt>
+			                <dd style="margin-left:8px"><img src="img/fuwu.jpg" alt="麦考林服务号" width="100" height="100"></dd>
+			            </dl>
+			        </div>
+			    </div>
+			</div>
+			<div id="f" class="clear">
+	            <div class="r r9 clear">
+	                <ul class="clear">
+	                    <li class="first"><a href="#" rel="nofollow">关于麦考林</a> </li>
+	                    <li><a href="#" target="_blank" rel="nofollow">INVESTOR RELATIONS</a></li>
+	                    <li><a href="#" rel="nofollow">联系我们 </a></li>
+	                    <li><a href="#" rel="nofollow">服务中心</a></li>
+	                    <li class="last"><a href="#" rel="nofollow">加入我们 </a></li>
+	                </ul>
+	                <p><a href="#" target="_blank"><img src="img/newicon.png" alt="上海工商" width="26" height="28"></a> 沪ICP备05003606号Copyright©2011-2015 MecoxLane Inc. All Rights Reserved</p>
+	            </div>
+	        </div>
+	        <div class="lastme">
+				<a target="_blank" href="#"><img src="img/evaluate.jpg"></a>　　<a target="_blank" href="#"><img src="img/beian.png">沪公网安备 31010402000234号</a>
+			</div>
+		</div>
+		<div id="newRight">
+			<div class="kefu">
+				<a href="javascript:;" class="BizQQWPA">
+					<img src="img/rightSider_01.png" />
+				</a>
+			</div>
+			<div class="app" id="right-phone">
+				<img src="img/rightSider_02.png" />
+				<img src="img/kefu1.png" class="right-kefu" />
+			</div>
+			<a href="javascript:;" class="newTop">
+				<img src="img/rightSider_04.png" />
+			</a>
+		</div>
+		<script src="js/jquery.1.11.3.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/newLeft.js"></script>
+		<script src="js/newRight.js"></script>
+		<script src="js/footer.js"></script>
+		<script src="js/chart.js"></script>
+	</body>
+</html>

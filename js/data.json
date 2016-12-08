@@ -1,0 +1,16 @@
+{
+	"10001":{
+		"goods-id":10001,
+		"goods-name":"维您综合蔬果乳酸酵素（固体饮料）",
+		"goods-sale":360,
+		"goods-number":"V1411290-001",
+		"goods-src":"img/1188_thumb_G_1457573340950.jpg"
+	},
+	"10002":{
+		"goods-id":10002,
+		"goods-name":"维您综合蔬果乳酸酵素（液体饮料）",
+		"goods-sale":45,
+		"goods-number":"V1411290-002",
+		"goods-src":"img/1188_thumb_G_1457573340951.jpg"
+	}
+}
