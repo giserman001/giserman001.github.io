@@ -27,29 +27,26 @@
     <div class="btn" onclick="goNext()">下一步</div>
     <script type="text/javascript" src="//js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.0.1.52.js"></script>
     <script>
-        window.onload = function () {
-            function goNext() {
-                console.log('aaaaaaaaaaa')
-                window.location.href = 'https://giserman001.github.io/for1.html'
-            }
-            console.log('页面加载了')
-            document.addEventListener('UniAppJSBridgeReady', function () {
-                console.log('触发事件了')
-                uni.getEnv(function (res) {
-                    console.log('当前环境：' + JSON.stringify(res));
-                    if (res.plus) {
-                        try {
-                            uni.navigateTo({
-                                url: '/pages/tabBar/component/component'
-                            });
-                        } catch (error) {
-                            console.log(error)
-                        }
-
-                    }
-                });
-            });
+        function goNext() {
+            console.log('aaaaaaaaaaa')
+            window.location.href = 'https://giserman001.github.io/for1.html'
         }
+        document.addEventListener('UniAppJSBridgeReady', function () {
+            console.log('触发事件了')
+            uni.getEnv(function (res) {
+                console.log('当前环境：' + JSON.stringify(res));
+                if (res.plus) {
+                    try {
+                        uni.switchTab({
+                            url: '/pages/tabBar/component/component'
+                        });
+                    } catch (error) {
+                        console.log(error)
+                    }
+
+                }
+            });
+        });
     </script>
 </body>
 
