@@ -13,7 +13,7 @@
 
 <body>
     <div>加载中...</div>
-    <script type="text/javascript" src="//js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.0.1.52.js"></script>
+    <script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
     <script>
         window.onload = function () {
             console.log('页面加载了')
@@ -23,7 +23,7 @@
                     console.log('当前环境：' + JSON.stringify(res));
                     if (res.plus) {
                         try {
-                            uni.navigateTo({
+                            uni.webview.navigateTo({
                                 url: '/pages/component/view/view'
                             });
                         } catch (error) {
