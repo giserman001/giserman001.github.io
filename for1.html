@@ -13,22 +13,32 @@
 
 <body>
     <div>加载中...</div>
+    <button id="btn-list" style="color: #000;">提交</button>
     <script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
     <script>
         window.onload = function () {
             console.log('页面加载了')
             document.addEventListener('UniAppJSBridgeReady', function () {
                 console.log('触发事件了')
-                uni.getEnv(function (res) {
-                    console.log('当前环境：' + JSON.stringify(res));
-                    if (res.plus) {
-                        try {
-                            uni.webview.navigateTo({
-                                url: '/pages/component/view/view'
-                            });
-                        } catch (error) {
-                            console.log(error)
-                        }
+                // uni.getEnv(function (res) {
+                //     console.log('当前环境：' + JSON.stringify(res));
+                //     if (res.plus) {
+                //         try {
+                //             uni.navigateTo({
+                //                 url: '/pages/component/view/view'
+                //             });
+                //         } catch (error) {
+                //             console.log(error, 'error')
+                //         }
+                //     }
+                // });
+                document.getElementById('btn-list').addEventListener('click', function (evt) {
+                    var target = evt.target;
+                    if (target.tagName === 'BUTTON') {
+                        console.log('执行了')
+                        uni.navigateTo({
+                            url: '/pages/component/view/view'
+                        });
                     }
                 });
             });

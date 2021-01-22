@@ -32,27 +32,6 @@
             window.location.href = 'https://giserman001.github.io/for1.html'
         }
     </script>
-    
-    <script>
-        window.onload = function () {
-            console.log('页面加载了')
-            document.addEventListener('UniAppJSBridgeReady', function () {
-                console.log('触发事件了')
-                uni.getEnv(function (res) {
-                    console.log('当前环境：' + JSON.stringify(res));
-                    if (res.plus) {
-                        try {
-                            uni.webview.navigateTo({
-                                url: '/pages/component/view/view'
-                            });
-                        } catch (error) {
-                            console.log(error)
-                        }
-                    }
-                });
-            });
-        }
-    </script>
 </body>
 
 </html>
