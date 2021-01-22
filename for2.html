@@ -38,9 +38,14 @@
                 uni.getEnv(function (res) {
                     console.log('当前环境：' + JSON.stringify(res));
                     if (res.plus) {
-                        uni.navigateTo({
-                            url: '/pages/tabBar/component/component'
-                        });
+                        try {
+                            uni.navigateTo({
+                                url: '/pages/tabBar/component/component'
+                            });
+                        } catch (error) {
+                            console.log(error)
+                        }
+
                     }
                 });
             });
