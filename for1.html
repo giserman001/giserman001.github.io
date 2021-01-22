@@ -23,8 +23,8 @@
                     console.log('当前环境：' + JSON.stringify(res));
                     if (res.plus) {
                         try {
-                            uni.switchTab({
-                                url: '/pages/tabBar/component/component'
+                            uni.navigateTo({
+                                url: '/pages/component/view/view'
                             });
                         } catch (error) {
                             console.log(error)
