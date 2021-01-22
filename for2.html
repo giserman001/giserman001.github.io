@@ -26,11 +26,11 @@
 <body>
     <div class="btn" onclick="goNext()">下一步</div>
     <script>
-        function goNext() {
-            console.log('aaaaaaaaaaa')
-            window.location.href = 'https://giserman001.github.io/for1.html'
-        }
         window.onload = function () {
+            function goNext() {
+                console.log('aaaaaaaaaaa')
+                window.location.href = 'https://giserman001.github.io/for1.html'
+            }
             console.log('页面加载了')
             document.addEventListener('UniAppJSBridgeReady', function () {
                 console.log('触发事件了')
