@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>加载中...</div>
+    <script type="text/javascript" src="//js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.0.1.52.js"></script>
+    <script>
+        window.onload = function () {
+            console.log('页面加载了')
+            document.addEventListener('UniAppJSBridgeReady', function () {
+                console.log('触发事件了')
+                uni.getEnv(function (res) {
+                    console.log('当前环境：' + JSON.stringify(res));
+                    if (res.plus) {
+                        uni.navigateTo({
+                            url: '/pages/index/index'
+                        });
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
